@@ -928,7 +928,6 @@ table img:not(:first-of-type){
     height: 100%;
     border-radius: inherit;
 }
-
 /* courses page start */
 .courses-page{
     display: grid;
@@ -962,7 +961,6 @@ table img:not(:first-of-type){
 }
 .course-box p{
     line-height: 1.6;
-    
 }
 .course-box .course-deal a{
     position: absolute;
@@ -1007,9 +1005,7 @@ table img:not(:first-of-type){
 }
 .friend-box .info{
     padding: 20px  0;
-    
 }
-
 .friend-box .info img{
     width:120px;
     height: 120px;
@@ -1030,7 +1026,6 @@ table img:not(:first-of-type){
 }
 .friend-box .visit span{
     font-size: 13px;
-
 }
 /* friends end */
 /* files start  */
@@ -1038,14 +1033,20 @@ table img:not(:first-of-type){
     margin-left: 20px;
     margin-right: 20px;
     flex-direction: row-reverse;
-		align-items: flex-start;
+	align-items: flex-start;
+}
+@media(max-width:767px){
+    .files-page{
+        flex-direction: column;
+        align-items: stretch;
+        
+    }
 }
 .files-page .file-statistics{
     min-width: 260px;
-		display: flex;
-		flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-.files-page .file-statistics .file-row{}
 .files-page .file-statistics .file-row i{
     width: 50px;
     height: 50px;
@@ -1174,7 +1175,6 @@ table img:not(:first-of-type){
 .plans-page .plan ul li.active::before{
 	content: "\f00c";
 	color: var(--green-color);
-
 }
 .plans-page .plan ul li::after{
 	font-weight: 900;
@@ -1201,14 +1201,11 @@ table img:not(:first-of-type){
 }
 /* plans end */
 
-
 /* start animation */
 @keyframes change-color{
-
     100%{
         background-color: white;
     }
-
 }
 @keyframes go-up{
     50%{
@@ -1216,7 +1213,3 @@ table img:not(:first-of-type){
 }
 }
 
-/* <label>
-    <input class="toggle-checkbox" type="checkbox" checked /> 
-    <div class="toggle-switch"></div>
-</label> */
